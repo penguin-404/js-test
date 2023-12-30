@@ -17,3 +17,27 @@ console.log(id === anotherId);
 
 // Non-Primitive[Reference]
 // Arrays,Objects,Functions
+
+
+// ++++++++++++++++++++++++++++
+// Memory Usage in JS
+// Stack(Primitive) and Heap(Non-Primitive)
+
+let myName = "Sam Bahadur"
+let anotherName = myName
+anotherName = "Hari Prasad"
+
+console.log(myName)
+console.log(anotherName)
+
+let userOne = {
+    email: "user@facebook.com",
+    pay: "user@paypal"
+}
+
+let userTwo = userOne
+
+userTwo.email = "shyam@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)

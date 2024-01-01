@@ -41,8 +41,17 @@ const obj2 = {
 const obj3 = {...obj1,...obj2}
 // console.log(obj3);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
 
 
+// Destructuring in Js.
 
+const course = {
+    coursename: "Js in Hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+const {courseInstructor: instru} = course
+console.log(instru);

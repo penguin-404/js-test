@@ -6,4 +6,44 @@ if(true){
 
 // console.log(a);
 // console.log(b);
-console.log(c);
+// console.log(c);
+
+function one(){
+    const username = "Kaushal"
+
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
+    two()
+}
+
+// one()
+
+if (true) {
+    const username = "kaushal"
+    if (username === "kaushal") {
+        const website = " youtube"
+        // console.log(username + website);
+    }
+    // console.log(website);
+}
+
+// console.log(username);
+
+
+// ++++++++++++++ Interesting ++++++++++++++
+
+function addone(num){
+    return num + 1
+}
+
+addone(5)
+
+
+const addTwo = function(num){
+    return num + 2
+}
+
+addTwo(5)

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<style>
+    .tomato{
+        background-color: tomato;
+    }
+    .aqua{
+        background-color: aqua;
+    }
+</style>
+<body id="bgc">
+    <h1>Events in JS | Chai with JS</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        let intervalID;
+
+        function changeColor(){
+            const oElem = document.getElementById("bgc");
+            oElem.className = oElem.className === "tomato" ? "aqua" : "tomato";
+        }
+
+        document.querySelector('#start').addEventListener('click',function(){
+            if(!intervalID){
+                intervalID = setInterval(changeColor,1000)
+            }
+        })
+
+        document.querySelector('#stop').addEventListener('click',function(){
+            clearInterval(intervalID);
+            intervalID = null;
+        })
+    </script>
+</body>
+</html>
